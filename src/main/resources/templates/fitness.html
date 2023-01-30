@@ -1,0 +1,23 @@
+  <form id="signup-form" action="{submit-url}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="fitness-class">Preferred Fitness Class:</label>
+    <select id="fitness-class" name="fitness-class">
+      <option value="">Select a class</option>
+      <option value="crossfit">Crossfit</option>
+      <option value="weightlifting">Weightlifting</option>
+      <option value="powerlifting">Powerlifting</option>
+      <option value="strongman">Strongman</option>
+    </select>
+    <label for="experience-level">Experience Level:</label>
+    <input type="radio" id="beginner" name="experience-level" value="beginner" required>
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="experience-level" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" id="advanced" name="experience-level" value="advanced">
+    <label for="advanced">Advanced</label>
+    <input class="ms-input" type="submit" value="Signup">
+  </form>
+  <div id="error-message" class="error"></div>
